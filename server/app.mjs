@@ -20,7 +20,7 @@ app.post("/assignments", async (req, res, next) => {
     const newPost = {
       title,
       content,
-      category: category ?? null,
+      category,
       length: length ?? null,
       status: status ?? "-",
       created_at: new Date(),
